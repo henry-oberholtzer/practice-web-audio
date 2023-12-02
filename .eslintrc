@@ -1,0 +1,35 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": true,
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:functional/recommended",
+        "plugin:functional/stylistic"
+    ],
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "jest/globals": true
+    },
+    "rules": {
+        "semi": 1,
+        "indent": ["warn", 4],
+        "no-console": "warn",
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+        "functional/rule-name": "error"
+    },
+    "plugins": ["jest", "functional", "@typescript-eslint"],
+    "root": true
+}
